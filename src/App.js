@@ -1,13 +1,14 @@
 import React from 'react';
 import Card from "./components/Card";
+import Data from "./data.json"
 
 function App() {
   return (
       <div>
         <h1 className="headingStyle">Welcome to React Js</h1>
-        <Card title="Card 1" detail="If you don’t experience the problems described above or don’t feel comfortable using JavaScript tools yet"/>
-        <Card title="Card 2" detail="If you don’t experience the problems described above or don’t feel comfortable using JavaScript tools yet"/>
-        <Card title="Card 3" detail="If you don’t experience the problems described above or don’t feel comfortable using JavaScript tools yet"/>
+        <Card title={Data[0].title} detail={Data[0].description} stock={Data[0].stock}/>
+        <Card title={Data[1].title} detail={Data[1].description} stock={Data[1].stock}/>
+        <Card title={Data[2].title} detail={Data[2].description} stock={Data[2].stock}/>
       </div>
   );
 }

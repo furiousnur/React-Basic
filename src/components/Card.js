@@ -17,12 +17,13 @@ const yearName = date.getFullYear();
 /* end variable declare*/
 /* start variable component function*/
 function Card(props){
-    const {title, detail} = props;
+    const {title, detail, stock} = props;
     return(
         <div className="card">
             <h2 className="cardTitle">{title}</h2>
             <p className="cardDetail">{detail}</p>
-            <p className="cardFooter">{dateName + " " + monthName + " " + yearName }</p>
+            <p className="cardFooter">{"Qty: " + stock}</p>
+            <p className="cardFooter">{"Date: " + dateName + " " + monthName + " " + yearName }</p>
         </div>
     );
 }
