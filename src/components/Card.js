@@ -4,18 +4,6 @@ const dateName = date.getDate();
 const monthName = date.getMonth();
 const yearName = date.getFullYear();
 
-//array destructor
-// const name = ['dog', 'cat'];
-// name[0];
-// name[1];
-// const [dog,cat] = name;
-// const dog = name[0];
-// const cat = name[1];
-
-// const title = "Call Family";
-// const detail = "If you don’t experience the problems described above or don’t feel comfortable using JavaScript tools yet"
-/* end variable declare*/
-/* start variable component function*/
 function Card(props){
     const {title, detail, stock} = props;
     return(
