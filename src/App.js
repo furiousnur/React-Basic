@@ -2,6 +2,7 @@ import React from 'react';
 import Card from "./components/Card";
 import Data from "./data.json"
 import List from "./components/UniqueList/List";
+import NestedMapping from "./components/UniqueList/NestedMapping";
 
 function App() {
     let items = [];
@@ -20,6 +21,8 @@ function App() {
           {items}
           <br/>
           <List />
+          <br/>
+          <NestedMapping />
       </div>
   );
 }
