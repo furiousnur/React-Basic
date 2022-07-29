@@ -13,8 +13,8 @@ const NestedMapping = () => {
             return <div className="card" key={index}>
                 <h3>{name}</h3>
                 <p>{age}</p>
-                {phones.map((phone, index) => {
-                    return <div>
+                {phones.map((phone, index2) => {
+                    return <div key={index2}>
                         <p>{phone.home}</p>
                         <p>{phone.office}</p>
                     </div>
