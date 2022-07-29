@@ -5,6 +5,7 @@ import List from "./components/UniqueList/List";
 import NestedMapping from "./components/UniqueList/NestedMapping";
 import ClassComponent from "./components/ClassComponent";
 import Card3 from "./components/Card3";
+import State from "./components/State";
 
 function Welcome(){
     return React.createElement("h1",{},"Welcome function component");
@@ -23,7 +24,8 @@ function App() {
   return (
       <div>
         <h1 className="headingStyle">Welcome to React Js</h1>
-        {/*<Card title={Data[0].title} detail={Data[0].description} stock={Data[0].stock}/> */}
+          <State />
+          {/*<Card title={Data[0].title} detail={Data[0].description} stock={Data[0].stock}/> */}
           {items}
           <br/>
           <List />
