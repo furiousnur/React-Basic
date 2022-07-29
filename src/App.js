@@ -4,6 +4,7 @@ import Data from "./data.json"
 import List from "./components/UniqueList/List";
 import NestedMapping from "./components/UniqueList/NestedMapping";
 import ClassComponent from "./components/ClassComponent";
+import Card3 from "./components/Card3";
 
 function Welcome(){
     return React.createElement("h1",{},"Welcome function component");
@@ -31,6 +32,8 @@ function App() {
           <ClassComponent name="This is class component using props"/>
           <br/>
           <Welcome />
+
+          <Card3 />
       </div>
   );
 }
