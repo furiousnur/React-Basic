@@ -8,6 +8,8 @@ import Card3 from "./components/Card3";
 import State from "./components/State";
 import ConditionalRendering from "./components/ConditionalRendering/Index";
 import EventHandler from "./components/EventHandler/index";
+import HookUseState from "./components/HookUseState/index";
+import Index2 from "./components/HookUseState/Index2";
 
 function Welcome(){
     return React.createElement("h1",{},"Welcome function component");
@@ -26,6 +28,9 @@ function App() {
   return (
       <div>
         <h1 className="headingStyle">Welcome to React Js</h1>
+          {/*Hook*/}
+          <HookUseState />
+          <Index2 />
           <EventHandler />
           <ConditionalRendering />
           <State />

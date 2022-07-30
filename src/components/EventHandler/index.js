@@ -16,7 +16,7 @@ class EventHandler extends Component {
     }
 
     increase(){
-        //If you have done this by e6 then not needed binding to button. You can also use binding in constructor
+        //If you have done this by es6 then not needed binding to button. You can also use binding in constructor
         this.setState({
             count: this.state.count +1
         })
