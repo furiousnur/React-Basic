@@ -11,6 +11,7 @@ import EventHandler from "./components/EventHandler/index";
 import HookUseState from "./components/HookUseState/index";
 import Index2 from "./components/HookUseState/Index2";
 import FormIndex from "./components/Form/FormIndex";
+import Child from "./components/StateLifting/Child";
 
 function Welcome(){
     return React.createElement("h1",{},"Welcome function component");
@@ -26,10 +27,17 @@ function App() {
     //start map
     //    items = Data.map((item, index) => <Card key={index} titel={item.title} detail={item.description} stock={item.stock}/>)
     //end map
+
+  //  method for props which receive data from child component
+    const handleChildData = (childData) =>{
+        console.log("App: " + childData)
+    }
+
   return (
       <div>
         <h1 className="headingStyle">Welcome to React Js</h1>
           <FormIndex />
+          <Child onChildData={handleChildData}/>
           {/*<HookUseState />*/}
           {/*<Index2 />*/}
           {/*<EventHandler />*/}
