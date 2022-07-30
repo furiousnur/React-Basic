@@ -7,6 +7,7 @@ import ClassComponent from "./components/ClassComponent";
 import Card3 from "./components/Card3";
 import State from "./components/State";
 import ConditionalRendering from "./components/ConditionalRendering/Index";
+import EventHandler from "./components/EventHandler/index";
 
 function Welcome(){
     return React.createElement("h1",{},"Welcome function component");
@@ -25,6 +26,7 @@ function App() {
   return (
       <div>
         <h1 className="headingStyle">Welcome to React Js</h1>
+          <EventHandler />
           <ConditionalRendering />
           <State />
           {/*<Card title={Data[0].title} detail={Data[0].description} stock={Data[0].stock}/> */}
