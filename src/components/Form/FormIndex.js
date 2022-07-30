@@ -3,30 +3,45 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 function FormIndex() {
-    const [password, setPassword] = useState("");
-    const [email, setEmail] = useState("");
+    // const [password, setPassword] = useState("");
+    // const [email, setEmail] = useState("");
+    // const [name, setName] = useState("");
 
+    const [user, setUser] = useState({name: '', email: '', password: ''})
+    const {name, email, password} = user
     const submitHandle = (e) =>{
         let userInfo = {
+            name,
             email,
             password
         }
         // console.log("form submitted")
-        console.log(userInfo)
+        console.log(user)
         e.preventDefault();
     }
+    const nameHandle = (e) =>{
+        setUser({name: e.target.value, email, password})
+    }
+
     const emailHandle = (e) =>{
         // console.log(e.target.value)
-        setEmail(e.target.value)
+        // setUser(e.target.value)
+        setUser({email: e.target.value, name, password})
     }
     const passwordHandle = (e) =>{
-        setPassword(e.target.value)
+        // setUser(e.target.value)
+        setUser({password: e.target.value, email, name})
     }
 
     return (
         <div>
             <div className="card">
                 <Form onClick={submitHandle}>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Name address</Form.Label>
+                        <Form.Control onChange={nameHandle} value={name} type="text" placeholder="Enter name" required/>
+                    </Form.Group>
+
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control onChange={emailHandle} value={email} type="email" placeholder="Enter email" required/>
