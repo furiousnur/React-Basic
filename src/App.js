@@ -12,6 +12,7 @@ import HookUseState from "./components/HookUseState/index";
 import Index2 from "./components/HookUseState/Index2";
 import FormIndex from "./components/Form/FormIndex";
 import Child from "./components/StateLifting/Child";
+import Toggle from "./components/Toggle/Toggle";
 
 function Welcome(){
     return React.createElement("h1",{},"Welcome function component");
@@ -38,6 +39,8 @@ function App() {
         <h1 className="headingStyle">Welcome to React Js</h1>
           <FormIndex />
           <Child onChildData={handleChildData}/>
+          <br/>
+          <Toggle />
           {/*<HookUseState />*/}
           {/*<Index2 />*/}
           {/*<EventHandler />*/}
