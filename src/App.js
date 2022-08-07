@@ -1,15 +1,11 @@
 import React from 'react';
-import Faqs from "./components/Faq/Faqs";
-
-function Welcome(){
-    return React.createElement("h1",{},"Welcome function component");
-}
+import Example from "./components/HookUseState/useEffectExample/Example";
 
 function App() {
   return (
       <div>
           <h1 className="headingStyle">Welcome to React Js</h1>
-          <Faqs />
+          <Example />
       </div>
   );
 }
