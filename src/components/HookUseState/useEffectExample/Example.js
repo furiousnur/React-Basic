@@ -5,6 +5,7 @@ const Example = () => {
     const [count, setCount] = useState(0)
     const [isLoading, setIsLoading] = useState(false)
 
+    //useEffect with anonymous function
     useEffect(()=>{
         console.log("useEffect");
     },[count]); //calls with only first render that's why use empty array and if change value of count then it will render
