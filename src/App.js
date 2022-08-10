@@ -1,12 +1,12 @@
 import React from 'react';
-import LifeCycle from "./components/LifeCycle/LifeCycle";
+import UserForm from "./components/RefExample/UserForm";
 
 
 function App() {
   return (
       <div>
           <h1 className="headingStyle">Welcome to React Js</h1>
-          <LifeCycle />
+          <UserForm />
       </div>
   );
 }
