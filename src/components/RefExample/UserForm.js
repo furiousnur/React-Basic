@@ -5,9 +5,7 @@ class UserForm extends Component {
         super(props);
         this.userNameRef = createRef();
         this.passwordRef = createRef();
-        this.state = {
-
-        }
+        this.state = {}
     }
 
     handleSubmit = (e) =>{
