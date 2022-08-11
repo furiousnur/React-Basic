@@ -1,11 +1,15 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import {userContext} from "./UserContext";
 
-const FourPropDrilling = (props) => {
-    const {name, id} = props.user;
+const FourPropDrilling = () => {
+    //destructuring
+    const {user, school} = useContext(userContext);
     return (
         <div>
-            <h3>Id: {id}</h3>
-            <h3>Name: {name}</h3>
+            <h3>Id: {user.id}</h3>
+            <h3>Name: {user.name}</h3>
+            <h3>Class: {school.class}</h3>
+            <h3>Total Student: {school.students}</h3>
         </div>
     );
 };
