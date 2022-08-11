@@ -1,4 +1,5 @@
 import React, {useState, useReducer} from 'react';
+import {reducer} from "./Reducer";
 
 const booksData = [
     {id: 1, name: "Pather Panchal"},
@@ -10,36 +11,7 @@ const CustomModal = ({modalText}) =>{
     return <p>{modalText}</p>
 }
 
-const reducer = (state, action) => {
-    //action.type action.payload
-    if (action.type === "ADD"){
-        const allBooks = [...state.books, action.payload]
-        return {
-            ...state,
-            books: allBooks,
-            isModalOpen: true,
-            modalText: 'book added'
-        }
-    }
-
-    if (action.type === "DELETE"){
-        const filterBooks = [...state.books].filter(book => book.id != action.payload);
-        return {
-            ...state,
-            books: filterBooks,
-            isModalOpen: true,
-            modalText: 'book is removed'
-        }
-    }
-    return state;
-}
-
 const UseReducer = () => {
-    /*UseState use here for few state*/
-    // const [books, setBooks] = useState(booksData);
-    // const [modalText, setModalText] = useState("");
-    // const [isModalOpen, setIsModalOpen] = useState(false);
-
     const [bookName, setBookName] = useState("");
 
     //Use Reducer
@@ -58,13 +30,6 @@ const UseReducer = () => {
             dispatch({type: "ADD", payload: newBook});
         }
         setBookName("");
-
-        // setBooks((prevState) => {
-        //     const newBook = {id: new Date().getTime().toString(), name: bookName}
-        //     return [...prevState, newBook]
-        // });
-        // setIsModalOpen(true);
-        // setModalText("book is added");
     }
 
     const removeBook = (id) =>{
