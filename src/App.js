@@ -1,11 +1,10 @@
 import React from 'react';
-import Users from "./components/PropTypes/Users";
+import Home from "./killy-components/Home";
 
 function App() {
   return (
       <div>
-          <h1 className="headingStyle">Welcome to React Js</h1>
-          <Users/>
+           <Home />
       </div>
   );
 }
