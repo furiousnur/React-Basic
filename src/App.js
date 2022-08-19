@@ -1,10 +1,10 @@
-import React from 'react';
-import Home from "./killy-components/Home";
+import React from 'react'; 
+import Index from "./killy-components/Index";
 
 function App() {
   return (
       <div>
-           <Home />
+           <Index />
       </div>
   );
 }
