@@ -1,10 +1,10 @@
-import React from 'react'; 
-import Index from "./killy-components/Index";
+import React from 'react';
+import Counter from "./components/Counter";  
 
-function App() {
-  return (
+function App() {  
+    return (
       <div>
-           <Index />
+          <Counter />
       </div>
   );
 }
