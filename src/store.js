@@ -1,8 +1,12 @@
-import { createStore,applyMiddleware } from "redux";
+import { createStore,applyMiddleware, combineReducers } from "redux";
 import thunk from "redux-thunk";
-import { todosReducer } from "./todos-services/reducers/todosReducers";
+import todosReducer from "./todos-services/reducers/todosReducers";
 import counterReducer from "./services/reducers/counterReducer";
-// const store = createStore(counterReducer); 
 
-const store = createStore(todosReducer, applyMiddleware(thunk));
+const rootReducer = combineReducers({
+    counterReducer: counterReducer,
+    todosReducer: todosReducer
+});
+const store = createStore(rootReducer, applyMiddleware(thunk));
+console.log(store.getState()); 
 export default store;
