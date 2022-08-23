@@ -1,10 +1,10 @@
-import React from 'react';
-import Counter from "./components/Counter";  
+import React from 'react'; 
+import Todos from "./components/Todos";  
 
 function App() {  
     return (
-      <div>
-          <Counter />
+      <div> 
+          <Todos />
       </div>
   );
 }
