@@ -7,6 +7,5 @@ const rootReducer = combineReducers({
     counterReducer: counterReducer,
     todosReducer: todosReducer
 });
-const store = createStore(rootReducer, applyMiddleware(thunk));
-console.log(store.getState()); 
+const store = createStore(rootReducer, applyMiddleware(thunk)); 
 export default store;
