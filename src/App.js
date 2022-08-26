@@ -1,12 +1,12 @@
 import React from 'react';
-import CounterView from "./features/counter/counterView";
-import TodosView from "./features/todos/todosView";  
+import CounterView from "./features/counter/counterView"; 
+import PostsView from "./features/posts/PostsView";  
 
 function App() {  
     return (
       <div> 
            {/*<CounterView />*/}
-          <TodosView />
+          <PostsView />
       </div>
   );
 }
