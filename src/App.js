@@ -1,14 +1,10 @@
 import React from 'react';
-import CounterView from "./features/counter/counterView"; 
-import PostsView from "./features/posts/PostsView";
-import Temp from "./components/Weather/temp";  
+import ClassState from "./components/Practice/ClassState";  
 
 function App() {  
     return (
-      <div> 
-           {/*<CounterView />*/}
-          {/*<PostsView />*/}
-          <Temp/>
+      <div>  
+          <ClassState />
       </div>
   );
 }
