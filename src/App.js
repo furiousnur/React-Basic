@@ -1,10 +1,10 @@
-import React from 'react';
-import ClassState from "./components/Practice/ClassState";  
+import React from 'react'; 
+import FunctionalState from "./components/Practice/FunctionalState";  
 
 function App() {  
     return (
       <div>  
-          <ClassState />
+          <FunctionalState />
       </div>
   );
 }
