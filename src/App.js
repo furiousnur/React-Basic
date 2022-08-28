@@ -1,10 +1,10 @@
-import React from 'react'; 
-import FunctionalState from "./components/Practice/FunctionalState";  
+import React from 'react';
+import IndexLazy from "./components/Lazy/Index";    
 
 function App() {  
     return (
-      <div>  
-          <FunctionalState />
+      <div>   
+          <IndexLazy />
       </div>
   );
 }
