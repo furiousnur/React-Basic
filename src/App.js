@@ -1,11 +1,11 @@
 import React, {Suspense} from 'react'; 
-const RefExample = React.lazy(()=> import('../src/components/RefExample/RefExample'));
+const UseContext1 = React.lazy(()=>import('./components/UseContext/UseContext1'));
 
 function App() {  
     return (
       <div>
           <Suspense fallback={<div>Loading...</div>}>
-              <RefExample/>
+              <UseContext1 />
           </Suspense> 
       </div>
   );
