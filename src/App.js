@@ -1,10 +1,10 @@
 import React from 'react';
-import IndexLazy from "./components/Lazy/Index";    
+import RefExample from "./components/RefExample/RefExample"; 
 
 function App() {  
     return (
-      <div>   
-          <IndexLazy />
+      <div>
+          <RefExample/>
       </div>
   );
 }
